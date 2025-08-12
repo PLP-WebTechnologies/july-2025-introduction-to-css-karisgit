@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* -------reset------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------------ */
+
+/*------VARIABLES -------*/
+:root {
+  /* colors */
+  --HEADER-BG: linear-gradient(to left, #00b09b, #96c93d);
+  --BODY-BG: #ced9ff;
+  --HERO-BG: #16232aec;
+  --CARD1-BG: #e5c02dad;
+  --CARD2-BG: #ff019196;
+  --CARD3-BG: #2a0c6299;
+  --FOOTER-BG: #11012e;
+  --BUTTON-BG: #642084;
+
+  /* Typography */
+  --FF: "Inter Tight", sans-serif;
+  --DESCRIPTION-TEXT: "Raleway", sans-serif;
+
+  --LOGO-FONT: "Audiowide", sans-serif;
+}
+
+body {
+  background-color: var(--BODY-BG);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--HEADER-BG);
+  border-radius: 0 0 15px 15px;
+  padding: .625rem;
+}
+
+.logo {
+  display: inline-block;
+  padding: 2px;
+  font: bold 25px var(--LOGO-FONT);/* font: font-style font-variant font-weight font-size/line-height font-family; - shorthand*/
+  color: black;
+  border: 3.5px double rgb(98, 6, 86);
+  border-radius: 0 15px;
+}
+
+nav {
+  margin-right: 0.9375rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  font: 1.125rem var(--FF);
+}
+
+li:hover {
+  border-bottom: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  width: 96%;
+  height: 150px;
+  border: 10px solid rgb(134, 126, 126);
+  border-radius: 15px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  background-color: var(--HERO-BG);
+}
+
+p {
+  font: 1.125rem var(--DESCRIPTION-TEXT);
+  color: #E2E8F0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.25rem;
+  position: relative;
+}
+
+.card {
+  width: 32%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+div > p {
+  text-align: center;
+  color: black;
+}
+
+.card1 {
+  background-color: var(--CARD1-BG);
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+.card2 {
+  background-color: var(--CARD2-BG);
+  padding: 30px 30px;
+  margin: 2.5rem 0; /*40px for both top and bottom, 0 for left and right*/
+}
+
+.card3 {
+  background-color: var(--CARD3-BG);
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.inner {
+  border: 1.5px dotted rgb(1, 1, 1);
+  width: 150px;
+  height: 150px;
+}
+
+.card1 .inner {
+  width: 100%;
+  height: 100%;
+}
+
+.card2 .inner {
+  width: 100%;
+  height: 100%;
+}
+.card3 .inner {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  width:100%;
+  height: 150px;
+  margin-top: 1.25rem;
+  background-color: var(--FOOTER-BG);
+  border-radius: 15px 15px 0 0;
+}
+
+.footer p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--BUTTON-BG);
+  box-shadow:inset 0px 1px 0px 0px #fbafe3;
+}
